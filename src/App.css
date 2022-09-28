@@ -1,0 +1,835 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.center {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.cabecalho {
+  /* Cores dda minha mãe #c896aa / #98a680 / #5f7456 */
+  background-color: #98a680;
+  min-height: 250px;
+  display: flex;
+}
+
+.escrita-inicial {
+  color: white;
+  text-align: left;
+  min-height: 250px;
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  text-align: left;
+}
+
+.escrita-inicial h3 {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.escrita-inicial p {
+  width: 90%;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.corpo-pagina {
+  background-image: url("../public/fundo-branco-marmore-textura.png");
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 150px;
+}
+
+.imagem-vania-erika-com-fundo {
+  margin-top: 50px;
+  margin-left: 40px;
+}
+
+.imagem-vania-erika-com-fundo img {
+  width: 575px;
+  height: 380px;
+}
+
+.conteudo-corpo-pagina {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.texto {
+  margin-top: 100px;
+  margin-right: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+
+.botao-compra {
+  color: white;
+  font-weight: bold;
+  width: 400px;
+  height: 60px;
+  margin-top: 120px;
+  font-size: 25px;
+  background-color: #5f7456;
+  border: none;
+  border-radius: 40px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.ondulacao {
+  position: relative;
+  margin-top: -180px;
+  margin-bottom: -20px;
+}
+
+.como-funciona {
+  background-color: #98a680;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.titulo-como-funciona {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  padding-top: 12px;
+}
+
+.escrita-e-imagem {
+  width: 85%;
+  margin: 25px 0px;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+.escrita-como-funciona {
+  font-size: 22px;
+  margin-right: 20px;
+  text-align: justify;
+}
+
+.escrita-como-funciona li {
+  margin-bottom: 18px;
+}
+
+.imagem-como-funciona  {
+  margin-left: 20px;
+}
+
+.imagem-como-funciona img {
+  width: 575px;
+  height: 380px;
+}
+
+.objetivo-como-funciona {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.objetivo-como-funciona h2 {
+  font-size: 35px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.objetivo-como-funciona p {
+  font-size: 22px;
+}
+
+.sobre-as-duas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-image: url("../public/fundo-branco-marmore-textura.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.sobre-as-duas h2 {
+  text-align: center;
+  font-size: 38px;
+  margin: 40px 100px;
+  align-self: center;
+}
+
+.bloco-erika {
+  background-color: #c896aa;
+  display: flex;
+  height: 400px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+
+.bloco-erika img {
+  width: 300px;
+  height: 300px;
+  background-repeat: no-repeat;
+  margin: 20px 20px;
+}
+
+.bloco-erika-direita {
+  margin-inline: 50px;
+}
+
+.bloco-erika-direita ul {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.bloco-erika-direita li {
+  margin-top: 15px;
+}
+
+.bloco-vania {
+  background-color: #c896aa;
+  display: flex;
+  height: 500px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin-bottom: 50px;
+}
+
+.bloco-vania img {
+  width: 300px;
+  height: 400px;
+  background-repeat: no-repeat;
+  margin: 20px 20px;
+}
+
+.bloco-vania-direita {
+  margin-inline: 50px;
+}
+
+.bloco-vania-direita ul {
+  font-size: 18px;
+  text-align: justify;
+}
+
+.bloco-vania-direita li {
+  margin-top: 15px;
+}
+
+.depoimentos {
+  background-color: #98a680;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.depoimentos h1 {
+  font-size: 55px;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.comentarios {
+  background-color: white;
+  width: 80%;
+  min-height: 100px;
+  margin-top: 20px;
+  border-radius: 25px;
+  padding: 15px 12px;
+}
+
+.comentarios span {
+  font-size: 18px;
+}
+
+.parte-final-depoimentos {
+  text-align: center;
+  margin-top: 45px;
+  width: 80%;
+  color: white;
+}
+
+.parte-final-depoimentos p {
+  font-size: 30px;
+}
+
+.parte-final-depoimentos h2 {
+  font-size: 45px;
+  margin-top: 5px;
+}
+
+.parte-final-depoimentos button {
+  font-size: 35px;
+  color: white;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.sexta-parte {
+  display: flex;
+  justify-content: left;
+  text-align: left;
+  background-color: #5f7456;
+  width: 100%;
+}
+
+.sexta-parte ul {
+  font-size: 20px;
+  margin: 30px 0px 30px 80px;
+  /*list-style-image: url("../public/icone-check-sem-fundo.png");*/
+}
+
+.pagamento {
+  background-image: url("../public/fundo-branco-marmore-textura.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.metodos-pagamento {
+  background-color: #272727;
+  width: 70%;
+  text-align: center;
+  border-radius: 40px;
+  margin: 60px 0px;
+  min-height: 350px;
+  padding-bottom: 10px;
+}
+
+.metodos-pagamento h2 {
+  color: white;
+  font-size: 32px;
+  margin: 30px 0px;
+}
+
+.metodos-pagamento button {
+  width: 350px;
+  height: 55px;
+  margin-top: 30px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.opcoes-pagamento {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.span-opcoes-pagamento {
+  width: 150px;
+  text-align: center;
+  background-color: #98a680;
+  font-size: 25px;
+  border-radius: 20px;
+  padding: 10px 25px;
+  margin-right: 50px;
+}
+
+.icones-pagamento {
+  display: flex;
+  flex-direction: column;
+  margin: 0px 15px;
+  width: 100px;
+  height: 100px;
+}
+
+.icones-pagamento span {
+  font-size: 20px;
+}
+
+.garantia {
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.garantia-texto-e-imagem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 30px 150px;
+}
+
+.bloco-esquerdo-garantia {
+  color: white;
+  font-size: 25px;
+  max-width: 500px;
+  margin-right: 40px;
+}
+
+.bloco-esquerdo-garantia h2 {
+  margin-top: 10px;
+}
+
+.bloco-direito-garantia img {
+  width: 280px;
+  height: 280px;
+}
+
+.garantia button {
+  width: 350px;
+  height: 55px;
+  font-size: 30px;
+  font-weight: bold;
+  background-color: white;
+  border: none;
+  border-radius: 40px;
+  text-align: center;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.duvidas-frequentes {
+  background-image: url("../public/fundo-branco-marmore-textura.png");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  color: white;
+}
+
+.duvidas {
+  background-color: #272727;
+  width: 90%;
+  margin: 100px 0px;
+  border-radius: 30px;
+}
+
+.titulo-duvidas {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 28px;
+}
+
+.topicos-duvidas {
+  margin-left: 25px;
+  margin-bottom: 40px;
+}
+
+.topicos-duvidas h3 {
+  margin-top: 15px;
+  margin-bottom: 3px;
+}
+
+.rodape {
+  background-color: #272727;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 380px;
+}
+
+.logo {
+  margin-left: 100px;
+}
+
+.bloco-direito-rodape {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: right;
+  width: 50%;
+  color: white;
+  font-size: 11px;
+  margin-right: 80px;
+}
+
+.botao-rodape {
+  align-self: flex-end;
+}
+
+.botao-voltar-ao-topo {
+  width: 200px;
+  height: 30px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 20px;
+  background-color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.botao-voltar-ao-topo a {
+  text-decoration: none;
+  color: black;
+  padding: 1px 30px 4px 30px;
+}
+
+.texto-rodape {
+  text-align: right;
+}
+
+.divisoria-final {
+  text-align: right;
+  margin-top: 15px;
+}
+
+.divisoria-final hr {
+  margin-bottom: 12px;
+}
+
+@media screen and (max-width: 900px) {
+  
+}
+
+@media screen and (max-width: 500px) {
+  .escrita-inicial {
+    width: 100%;
+    text-align: center;
+  }
+
+  .escrita-inicial p {
+    width: 100%;
+  }
+
+  .corpo-pagina {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .imagem-vania-erika-com-fundo {
+    margin: 40px 0px 0px 0px;
+  }
+
+  .imagem-vania-erika-com-fundo img {
+    width: 375px;
+    height: 180px;
+  }
+
+  .conteudo-corpo-pagina {
+    margin: 0px;
+  }
+
+  .texto {
+    margin-top: 20px;
+  }
+
+  .botao-compra {
+    margin: 25px 0px;
+  }
+
+  .titulo-como-funciona {
+    text-align: center;
+  }
+
+  .escrita-e-imagem {
+    width: 100%;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+
+  .imagem-como-funciona {
+    margin: 5px 0px 15px 0px;
+  }
+
+  .imagem-como-funciona img {
+    width: 375px;
+    height: 180px;
+  }
+
+  .escrita-como-funciona {
+    margin-left: 30px;
+  }
+
+  .objetivo-como-funciona {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .objetivo-como-funciona p {
+    margin-left: 10px;
+  }
+
+  .sobre-as-duas h2 {
+    text-align: justify;
+    font-size: 25px;
+    margin: 35px 16px;
+  }
+
+  .bloco-erika {
+    height: 500px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+  }
+  
+  .bloco-erika img {
+    width: 200px;
+    height: 200px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .bloco-erika-direita h2 {
+    text-align: center;
+  }
+  
+  .bloco-erika-direita {
+    margin: 0px;
+  }
+  
+  .bloco-erika-direita ul {
+    font-size: 18px;
+    width: 80%;
+    text-align: justify;
+    margin-left: 30px;
+  }
+  
+  .bloco-erika-direita li {
+    margin-top: 10px;
+  }
+
+  .bloco-vania {
+    height: 650px;
+    margin-bottom: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 92%;
+  }
+  
+  .bloco-vania img {
+    width: 175px;
+    height: 250px;
+    margin: 0px 0px 0px 0px;
+  }
+
+  .bloco-vania-direita h2 {
+    text-align: center;
+  }
+  
+  .bloco-vania-direita {
+    margin: 0px;
+  }
+  
+  .bloco-vania-direita ul {
+    font-size: 18px;
+    width: 80%;
+    text-align: justify;
+    margin-left: 30px;
+  }
+  
+  .bloco-vania-direita li {
+    margin-top: 10px;
+  }
+  
+  .depoimentos h1 {
+    font-size: 40px;
+  }
+  
+  .comentarios {
+    width: 90%;
+    margin-top: 25px;
+  }
+  
+  .comentarios span {
+    font-size: 18px;
+  }
+  
+  .parte-final-depoimentos {
+    text-align: center;
+    margin: 45px;
+    width: 100%;
+  }
+  
+  .parte-final-depoimentos p {
+    font-size: 25px;
+  }
+  
+  .parte-final-depoimentos h2 {
+    font-size: 35px;
+    margin-top: 15px;
+  }
+  
+  .parte-final-depoimentos button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .sexta-parte ul {
+    text-align: left;
+    font-size: 20px;
+    margin: 30px 0px 30px 40px;
+    /*list-style-image: url("../public/icone-check-sem-fundo.png");*/
+  }
+
+  .metodos-pagamento {
+    width: 90%;
+    padding-bottom: 25px;
+  }
+  
+  .metodos-pagamento h2 {
+    font-size: 30px;
+  }
+  
+  .metodos-pagamento button {
+    margin-top: 20px;
+  }
+  
+  .opcoes-pagamento {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 45px;
+  }
+  
+  .span-opcoes-pagamento {
+    width: 250px;
+    height: 60px;
+    text-align: center;
+    align-items: center;
+    margin: 0px 0px 40px 0px;
+  }
+  
+  .icones-pagamento {
+    margin-bottom: 20px;
+  }
+
+  .imagem-pix {
+    margin-top: 35px;
+  }
+  
+  .icones-pagamento span {
+    font-size: 20px;
+  }
+  
+  .garantia-texto-e-imagem {
+    flex-direction: column-reverse;
+    padding: 0px;
+    margin-bottom: 30px;
+  }
+  
+  .bloco-esquerdo-garantia {
+    font-size: 20px;
+    margin: 0px 10px 0px 20px;
+  }
+  
+  .bloco-esquerdo-garantia h2 {
+    margin-top: 20px;
+  }
+  
+  .bloco-direito-garantia img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .garantia button {
+    width: 300px;
+    height: 45px;
+    font-size: 28px;
+  }
+
+  .topicos-duvidas {
+    margin-left: 15px;
+    width: 92%;
+    text-align: justify;
+  }
+
+  .titulo-duvidas {
+    font-size: 21px;
+  }
+
+  .rodape {
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 500px;
+  }
+  
+  .logo {
+    margin-left: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    width: 180px;
+    height: 180px;
+  }
+  
+  .bloco-direito-rodape {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 0px;
+  }
+  
+  .botao-voltar-ao-topo {
+    margin-right: 20px;
+  }
+  
+  .texto-rodape {
+    margin-right: 20px;
+    font-size: 9px;
+  }
+  
+  .divisoria-final {
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  .divisoria-final hr {
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+}
